@@ -8,6 +8,15 @@ For ease of use, install dependencies using `homebrew` or your package manager o
 elixir
 ```
 
+### Running the REPL
+```
+iex -S mix
+```
+Use `recompile` to recompile the changes without relaunching iex
+```
+iex(1)> recompile
+```
+
 ### Running tests
 
 ```
