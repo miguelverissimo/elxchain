@@ -8,10 +8,30 @@ For ease of use, install dependencies using `homebrew` or your package manager o
 elixir
 ```
 
-### Running tests
+### Running the REPL
+```
+iex -S mix
+```
+Use `recompile` to recompile the changes without relaunching iex
+```
+iex> recompile
+```
 
+### Running tests
 ```
 mix test
+```
+
+### Create docs
+```
+mix doc
+```
+
+### Adding dependencies
+Edit `mix.exs` and add dependencies in the format `{:dep_from_hexpm, "~> 0.3.0"}` to `deps`.
+Install with
+```
+mix deps.get
 ```
 
 <!-- **TODO: Add description**
